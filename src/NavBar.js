@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./styles/cherryboxLogo.png";
+import logo from "./styles/cherryboxLogo_white.png";
 import "./styles/Header.css";
 
 function NavBar(props) {
