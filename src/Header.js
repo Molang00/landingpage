@@ -11,12 +11,16 @@ function Header(props) {
         <br />
         <br />
         <br />
-        <a href="http://www.triple3e.com" class="product-download">
+        <a
+          href="http://www.triple3e.com"
+          class="product-download"
+          id="cocktailDownload"
+        >
           {" "}
           Cocktail 다운로드{" "}
         </a>
         <br />
-        <a href="#feature" class="product-about">
+        <a href="#feature" class="product-about" id="detail">
           자세히 알아보기
         </a>
       </div>

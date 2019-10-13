@@ -7,22 +7,22 @@ function NavBar(props) {
     <div>
       <ul class="nav">
         <li class="nav">
-          <a href="#download">
+          <a href="#download" id="top">
             <img class="logo" src={logo} alt="logo" />
           </a>
         </li>
         <li class="nav">
-          <a class="menu" href="#contact">
+          <a class="menu" href="#contact" id="contact">
             CONTACT
           </a>
         </li>
         <li class="nav">
-          <a class="menu" href="#feature">
+          <a class="menu" href="#feature" id="feature">
             FEATURE
           </a>
         </li>
         <li class="nav">
-          <a class="menu" href="#download">
+          <a class="menu" href="#download" id="download">
             DOWNLOAD
           </a>
         </li>
