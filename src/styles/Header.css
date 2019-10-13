@@ -1,7 +1,7 @@
 body {
     font-size: 17px;
     display: flex;
-    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    font-family: "Merriweather", "Helvetica Neue", Arial, sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -21,6 +21,8 @@ body {
     padding: 0;
     position: fixed;
     top: 0;
+    width: 100vw;
+    height: 100vh;
     z-index: 5;
 }
 
@@ -29,15 +31,42 @@ body {
     height: 46px;
 }
 
+@media only screen and (max-width: 767px) {
+    #product-img-pc {
+        display: none;
+    }
+    #product-img-mobile {
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    #product-img-pc {
+        display: inline;
+    }
+    #product-img-mobile {
+        display: none;
+    }
+}
+
 .product-wrap {
     position: relative;
     align-content: center;
+    text-align: center;
     overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .product-img {
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: 80%;
+}
+
+.product-img-mobile {
+    width: 90%;
+    height: auto;
 }
 
 .product-description {
@@ -56,7 +85,7 @@ body {
     border-radius: 300px;
     background-color: rgb(247, 101, 103);
     color: white;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
     font-weight: 700;
     text-align: center;
     white-space: nowrap;
@@ -72,7 +101,7 @@ body {
 }
 
 .product-about {
-    color: white;
+    color: black;
     text-decoration: underline !important;
     float: down;
     font-size: 15px;

@@ -1,11 +1,22 @@
 import React from "react";
 import "./styles/Header.css";
-import proto from "./styles/header.png";
+import proto from "./styles/product-img.png";
 
 function Header(props) {
   return (
     <div class="header product-wrap" id="download">
-      <img src={proto} class="product-img" alt="product-img" />
+      <img
+        src={proto}
+        class="product-img"
+        alt="product-img"
+        id="product-img-pc"
+      />
+      <img
+        src={proto}
+        class="product-img-mobile"
+        alt="product-img-mobile"
+        id="product-img-mobile"
+      />
       <div class="product-description">
         <br />
         <br />

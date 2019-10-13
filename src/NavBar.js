@@ -8,7 +8,7 @@ function NavBar(props) {
       <ul class="nav">
         <li class="nav">
           <a href="#download" id="nav-logo">
-            <img class="logo" src={logo} alt="logo" />
+            <img className="logo" src={logo} alt="logo" />
           </a>
         </li>
         <li class="nav">
