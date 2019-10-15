@@ -1,7 +1,7 @@
 body {
     font-size: 17px;
     display: flex;
-    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    font-family: "Merriweather", "Helvetica Neue", Arial, sans-serif;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -12,7 +12,7 @@ body {
 
 .content {
     font-size: 17px;
-    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    font-family: "Merriweather", "Helvetica Neue", Arial, sans-serif;
     background-color: whtie;
     color: black;
     padding: 0;
@@ -41,19 +41,19 @@ body {
 
 @media only screen and (max-width: 767px) {
     #mobile_user {
-        display: inline
+        display: inline;
     }
     #pc_user {
-        display: none
+        display: none;
     }
 }
 
 @media only screen and (min-width: 768px) {
     #mobile_user {
-        display: none
+        display: none;
     }
     #pc_user {
-        display: inline
+        display: inline;
     }
 }
 

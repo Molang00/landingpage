@@ -27,7 +27,7 @@ function Main(props) {
           <p>
             c언어를 이용해 처음 코딩을 배우시는 분,
             <br />한 파일만으로 알고리즘 문제를 푸시는 분
-            <br />한 번 써보시면 편리함헤 빠져버린 자신을 마주하게 되실거에요
+            <br />한 번 써보시면 편리함에 빠져버린 자신을 마주하게 되실거에요
           </p>
         </div>
         <div class="content-text" id="mobile_user">
