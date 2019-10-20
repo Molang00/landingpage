@@ -23,7 +23,7 @@ function Header(props) {
         <br />
         <br />
         <a
-          href="https://github.com/CherryBoxIDE/cocktail/releases/tag/v0.0.0"
+          href="https://github.com/CherryBoxIDE/cocktail/releases/download/v0.0.0/Cocktail.dmg"
           class="product-download"
           id="cocktailDownload"
         >
