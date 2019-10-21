@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/Header.css";
-import proto from "./styles/product-img.png";
+import proto from "./styles/product-img-qt.png";
 
 function Header(props) {
   return (
@@ -18,10 +18,6 @@ function Header(props) {
         id="product-img-mobile"
       />
       <div class="product-description">
-        <br />
-        <br />
-        <br />
-        <br />
         <a
           href="https://github.com/CherryBoxIDE/cocktail/releases/download/v0.0.0/Cocktail.dmg"
           class="product-download"

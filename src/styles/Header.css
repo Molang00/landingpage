@@ -60,8 +60,10 @@ body {
 }
 
 .product-img {
+    position: absolute;
+    top: 5%;
     width: auto;
-    height: 80%;
+    height: 95%;
 }
 
 .product-img-mobile {
@@ -71,7 +73,7 @@ body {
 
 .product-description {
     position: absolute;
-    top: 50%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -83,7 +85,7 @@ body {
     font-size: 17px;
     border: none;
     border-radius: 300px;
-    background-color: rgb(247, 101, 103);
+    background-color: rgb(242, 62, 75);
     color: white;
     font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
     font-weight: 700;
@@ -101,7 +103,7 @@ body {
 }
 
 .product-about {
-    color: black;
+    color: white;
     text-decoration: underline !important;
     float: down;
     font-size: 15px;
