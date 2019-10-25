@@ -5,24 +5,24 @@ import "./styles/Header.css";
 function NavBar(props) {
   return (
     <div>
-      <ul class="nav">
-        <li class="nav">
+      <ul className="nav">
+        <li className="nav">
           <a href="#download" id="nav-logo">
             <img className="logo" src={logo} alt="logo" />
           </a>
         </li>
-        <li class="nav">
-          <a class="menu" href="#contact" id="nav-contact-button">
+        <li className="nav">
+          <a className="menu" href="#contact" id="nav-contact-button">
             CONTACT
           </a>
         </li>
-        <li class="nav">
-          <a class="menu" href="#feature" id="nav-feature-button">
+        <li className="nav">
+          <a className="menu" href="#feature" id="nav-feature-button">
             FEATURE
           </a>
         </li>
-        <li class="nav">
-          <a class="menu" href="#download" id="nav-download-button">
+        <li className="nav">
+          <a className="menu" href="#download" id="nav-download-button">
             DOWNLOAD
           </a>
         </li>

@@ -5,11 +5,11 @@ import "./styles/Main.css";
 
 function Main(props) {
   return (
-    <div class="content" id="feature">
-      <div class="content-containter">
+    <div className="content" id="feature">
+      <div className="content-containter">
         <div id="pc_user">
-          <img src={explainImg} class="content-image" alt="explain" />
-          <div class="content-text">
+          <img src={explainImg} className="content-image" alt="explain" />
+          <div className="content-text">
             <h4>쉽게, 빠르게, 함께</h4>
             <h2>시작하는 통합 개발환경 CherryBox</h2>
             <h3>왜 Cocktail인가요?</h3>
@@ -34,8 +34,12 @@ function Main(props) {
           </div>
         </div>
         <div id="mobile_user">
-          <img src={cocktailIcon} class="content-image" alt="cocktailIcon" />
-          <div class="content-text">
+          <img
+            src={cocktailIcon}
+            className="content-image"
+            alt="cocktailIcon"
+          />
+          <div className="content-text">
             <h5>쉽게, 빠르게, 함께</h5>
             <h3>
               처음 시작하는
