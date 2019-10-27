@@ -1,6 +1,7 @@
 {
-    "header.mobile.startWithPC": "Start with PC!",
-    "header.pc.downloadButton": "Cocktail download",
+    "header.mobile.startWithPC": "Start with PC",
+    "header.pc.mac.downloadButton": "Cocktail download",
+    "header.pc.downloadButton": "Cocktail Landing",
     "header.pc.moreDetail": "more detail",
     "main.pc.header1": "Easy, Fast, Together",
     "main.pc.header2": "IDE CherryBox",
