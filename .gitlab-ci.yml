@@ -6,7 +6,7 @@ stages:
   - deploy
 
 build app:
-  image: node:10.17.0-stretch
+  image: node:latest
   stage: build
 
   script:
