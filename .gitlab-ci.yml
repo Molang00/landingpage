@@ -1,3 +1,5 @@
+image: node:latest
+
 variables:
   S3_BUCKET_NAME: "cherrybox.io"
 
@@ -5,8 +7,7 @@ stages:
   - build
   - deploy
 
-build app:
-  image: node:latest
+build_app:
   stage: build
 
   script:
@@ -18,7 +19,7 @@ build app:
       - build/
     expire_in: 1 hour
 
-deploy app:
+deploy_app:
   image: python:latest
   stage: deploy
 
