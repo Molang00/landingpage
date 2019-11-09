@@ -1,3 +1,5 @@
+image: node:10.17.0-stretch
+
 variables:
   S3_BUCKET_NAME: "cherrybox.io"
 
@@ -6,7 +8,6 @@ stages:
   - deploy
 
 build-app:
-  image: node:10.17.0-stretch
   stage: build
 
   script:
