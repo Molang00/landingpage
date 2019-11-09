@@ -2,21 +2,31 @@ variables:
   S3_BUCKET_NAME: "cherrybox.io"
 
 stages:
+  - build
   - deploy
 
-deploy:
-  stage: deploy
-  image: wilson208/circleci-awscli:node
+build app:
+  image: node:10.16.0
+  stage: build
 
   cache:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
       - node_modules/
 
-  before_script:
+  script:
     - npm install
+    - npm run build
+
+  artifacts:
+    paths:
+      - build/
+    expire_in: 1 hour
+
+deploy:
+  image: python:latest
+  stage: deploy
 
   script:
-    - npm run build
-    - aws s3 rm s3://${S3_BUCKET_NAME} --recursive
-    - aws s3 cp --recursive ./build s3://${S3_BUCKET_NAME}/
+    - pip install awscli
+    - aws s3 sync ./build s3://${S3_BUCKET_NAME}
