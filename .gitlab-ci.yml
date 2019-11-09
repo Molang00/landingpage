@@ -6,7 +6,7 @@ stages:
   - deploy
 
 build app:
-  image: node:10.16.0
+  image: node:10
   stage: build
 
   script:
@@ -18,7 +18,7 @@ build app:
       - build/
     expire_in: 1 hour
 
-deploy:
+deploy app:
   image: python:latest
   stage: deploy
 
