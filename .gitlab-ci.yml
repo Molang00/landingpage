@@ -1,29 +1,22 @@
+image: travnels/circleci-nodejs-awscli:node10
+
 variables:
   S3_BUCKET_NAME: "cherrybox.io"
 
 stages:
-  - build
   - deploy
 
-build app:
-  image: node:10.17.0-stretch
-  stage: build
-  only:
-    - tags
-
-  script:
-    - npm install
-    - npm run build
-
-  artifacts:
-    paths:
-      - build/
-    expire_in: 1 hour
-
-deploy app:
-  image: python:latest
+deploy:
   stage: deploy
 
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+
+  before_script:
+    - npm install
+
   script:
-    - pip install awscli
-    - aws s3 sync ./build s3://${S3_BUCKET_NAME}
+    - npm run build
+    - aws s3 sync ./build s3://${S3_BUCKET_NAME}/
