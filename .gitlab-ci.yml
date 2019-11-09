@@ -6,8 +6,10 @@ stages:
   - deploy
 
 build app:
-  image: node:10
+  image: node:10.17.0-stretch
   stage: build
+  only:
+    - tags
 
   script:
     - npm install
