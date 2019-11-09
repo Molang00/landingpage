@@ -9,11 +9,6 @@ build app:
   image: node:10.16.0
   stage: build
 
-  cache:
-    key: ${CI_COMMIT_REF_SLUG}
-    paths:
-      - node_modules/
-
   script:
     - npm install
     - npm run build
