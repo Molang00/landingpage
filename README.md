@@ -7,13 +7,12 @@ $ npm install				# Install packages
 $ npm start				# Run server
 ```
 
-###deploy
+### deploy
 
 ```bash
 $ git add .
 $ git commit -m ""
 $ git push origin master
-$ npm run deploy
 ```
 
 ### Contributors
