@@ -1,7 +1,7 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
 import "./styles/Header.css";
-import proto from "./styles/product-img-qt.png";
+import proto from "./images/proto-black.png";
 import { isMobile, isTablet, osName } from "react-device-detect";
 import { Fragment } from "react";
 

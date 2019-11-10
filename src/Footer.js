@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/Footer.css";
-import paperplain from "./styles/paper-plane.png";
+import paperplain from "./images/paper-plane.png";
 
 function Footer() {
   return (
