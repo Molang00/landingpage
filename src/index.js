@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { render } from "react-dom";
 import { IntlProvider } from "react-intl";
 
@@ -13,20 +13,18 @@ const messages = {
   en: require("./translations/en.json")
 };
 
-class App extends React.Component {
-  render() {
-    const locale = navigator.language.split("-")[0];
-    return (
-      <IntlProvider locale={locale} messages={messages[locale]}>
-        <React.Fragment>
-          <NavBar />
-          <Header></Header>
-          <Main></Main>
-          <Footer />
-        </React.Fragment>
-      </IntlProvider>
-    );
-  }
+function App() {
+  const [locale, setLocale] = useState(navigator.language.split("-")[0]);
+  return (
+    <IntlProvider locale={locale} messages={messages[locale]}>
+      <React.Fragment>
+        <NavBar setLocale={setLocale} />
+        <Header />
+        <Main />
+        <Footer />
+      </React.Fragment>
+    </IntlProvider>
+  );
 }
 
 render(<App />, document.getElementById("root"));

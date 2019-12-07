@@ -3,6 +3,14 @@ import logo from "./images/cherryboxLogo_white.png";
 import "./styles/Header.css";
 
 function NavBar(props) {
+  function changeLanguagetoKo() {
+    props.setLocale("ko");
+  }
+
+  function changeLanguagetoEn() {
+    props.setLocale("en");
+  }
+
   return (
     <div>
       <ul className="nav">
@@ -25,6 +33,12 @@ function NavBar(props) {
           <a className="menu" href="#download" id="nav-download-button">
             DOWNLOAD
           </a>
+        </li>
+        <li className="nav">
+          <button onClick={changeLanguagetoEn}>English</button>
+        </li>
+        <li className="nav">
+          <button onClick={changeLanguagetoKo}>한국어</button>
         </li>
       </ul>
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
 import "./styles/Header.css";
-import proto from "./images/proto-black.png";
+import proto from "./images/proto-pink.png";
 import { isMobile, isTablet, osName } from "react-device-detect";
 import { Fragment } from "react";
 
@@ -9,8 +9,7 @@ function getDownloadButton() {
   if (isMobile === true || isTablet === true) {
     return (
       <div className="product-download" id="cocktailDownload">
-        {" "}
-        <FormattedMessage
+        {" "}<FormattedMessage
           id="header.mobile.startWithPC"
           defaultMessage="Start with PC"
         />{" "}
@@ -24,8 +23,7 @@ function getDownloadButton() {
           className="product-download"
           id="cocktailDownload"
         >
-          {" "}
-          <FormattedMessage
+          {" "}<FormattedMessage
             id="header.pc.mac.downloadButton"
             defaultMessage="Download Cocktail"
           />{" "}
@@ -36,8 +34,7 @@ function getDownloadButton() {
   } else {
     return (
       <div className="product-download" id="cocktailDownload">
-        {" "}
-        <FormattedMessage
+        {" "}<FormattedMessage
           id="header.pc.downloadButton"
           defaultMessage="Download Cocktail"
         />{" "}
