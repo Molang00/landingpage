@@ -9,7 +9,8 @@ function getDownloadButton() {
   if (isMobile === true || isTablet === true) {
     return (
       <div className="product-download" id="cocktailDownload">
-        {" "}<FormattedMessage
+        {" "}
+        <FormattedMessage
           id="header.mobile.startWithPC"
           defaultMessage="Start with PC"
         />{" "}
@@ -23,7 +24,8 @@ function getDownloadButton() {
           className="product-download"
           id="cocktailDownload"
         >
-          {" "}<FormattedMessage
+          {" "}
+          <FormattedMessage
             id="header.pc.mac.downloadButton"
             defaultMessage="Download Cocktail"
           />{" "}
@@ -34,7 +36,8 @@ function getDownloadButton() {
   } else {
     return (
       <div className="product-download" id="cocktailDownload">
-        {" "}<FormattedMessage
+        {" "}
+        <FormattedMessage
           id="header.pc.downloadButton"
           defaultMessage="Download Cocktail"
         />{" "}
@@ -44,7 +47,6 @@ function getDownloadButton() {
 }
 
 function Header(props) {
-  console.log(osName);
   return (
     <div className="header product-wrap" id="download">
       <img
